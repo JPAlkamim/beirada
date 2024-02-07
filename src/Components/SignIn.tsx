@@ -19,7 +19,7 @@ export const SignIn = () => {
         <>
             {contextHolder}
             <Header />
-            <div className='pb-48'>
+            <div className='py-64'>
                 <div className='grid justify-items-center'>
                     <p className='font-bold text-4xl mt-4' style={{color: '#292822', fontFamily: 'Barlow'}}>Cadastre-se</p>
                     <div className="flex my-4">
