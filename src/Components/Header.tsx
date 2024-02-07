@@ -68,7 +68,7 @@ export const Header = () => {
                 </div>
             </div>
             
-            <div className="grid grid-cols-6 mx-24 py-3 h-12">
+            <div className="grid grid-cols-6 mx-24 py-3">
               <button onClick={() => setSearch(() => !search)}>
                 <svg xmlns="http://www.w3.org/2000/svg" 
                     fill="none" 

@@ -15,7 +15,7 @@ export const Login = () => {
     const success = () => {
         messageApi.open({
           type: 'success',
-          content: 'Login efetuado com sucesso!',
+          content: 'Bem-Vindo de volta Felippe!',
         });
         setTimeout(() => {
             navigate("/");
@@ -31,7 +31,7 @@ export const Login = () => {
     };
 
     const handleClick = () => {
-        if(username === 'Baboliven' && password === '1234') {
+        if(username === 'ra118253@uem.br' && password === 'felippeCMM1') {
             success()
         } else {
             error()
@@ -52,7 +52,7 @@ export const Login = () => {
                     </Link>
                 </div>
             </div>
-            <div className="boxLogin grid justify-items-center border-4 border-gray-950 mx-96 p-2">
+            <div className="grid m-auto justify-items-center max-w-4xl border-4 border-gray-950 p-2">
                 <p className='mr-auto my-2 font-bold text-2xl' style={{color: '#292822', fontFamily: 'Barlow'}}>Email *</p>
                 <Input className='' value={username} onChange={(e) => setUsername(e.target.value)} placeholder='Insira o email' />
                 <p className='mr-auto my-2 font-bold text-2xl' style={{color: '#292822', fontFamily: 'Barlow'}}>Senha *</p>

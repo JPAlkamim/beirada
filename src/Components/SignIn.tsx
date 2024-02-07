@@ -29,7 +29,7 @@ export const SignIn = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-4 border-4 border-gray-950 mx-96 p-2">
+                <div className="grid mx-auto max-w-4xl grid-cols-2 gap-4 border-4 border-gray-950 p-2">
                     <div className="">    
                         <p className='mr-auto my-2 font-bold text-lg' style={{color: '#292822', fontFamily: 'Barlow'}}>Nome *</p>
                         <Input className='' placeholder='Insira o Nome' />
