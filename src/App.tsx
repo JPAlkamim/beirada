@@ -7,7 +7,7 @@ import { Contact } from "./Components/Contact"
 import { Profile } from "./Components/Profile"
 import { Subjects } from "./Components/Subjects"
 import { SubjectContent } from "./Components/SubjectContent"
-import { Gallery } from "./Components/Gallery"
+import { Gallery } from "./Components/Gallery/Gallery"
 import { FanArea } from "./Components/FanArea"
 import { BrowserRouter as Router, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom"
 
@@ -30,7 +30,6 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-
     <>
       <RouterProvider router={router} />
     </>

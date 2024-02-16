@@ -20,11 +20,13 @@ export const Header = ({currentPage}: HeaderProps) => {
     }
     const [search, setSearch] = React.useState(false)
     const [isLogged, setIsLogged] = useSessionStorage('user', false);
+    const [galeryType, setGaleryType] = useSessionStorage('galeryType', '');
     const navigate = useNavigate();
     const [messageApi, contextHolder] = message.useMessage();
 
     const handleHeaderClick = (goTo: string) => {
       if (goTo) {
+        setGaleryType('');
         navigate(dict[goTo]);
       }
     };
@@ -77,6 +79,39 @@ export const Header = ({currentPage}: HeaderProps) => {
         ),
       }
     ];
+
+    const itensGallery = [
+      {
+        key: '1',
+        label: (
+          <div onClick={() => setGaleryType('PHOTO')}>
+            <Link className='flex justify-center' to="/gallery">
+              Galeria de Fotos
+            </Link>
+          </div>
+        ),
+      },
+      {
+        key: '2',
+        label: (
+          <div onClick={() => setGaleryType('VIDEOS')}>
+            <Link className='flex justify-center' to="/gallery">
+              Galeria de Vídeos
+            </Link>
+          </div>
+        ),
+      },
+      {
+        key: '3',
+        label: (
+          <div onClick={() => setGaleryType('AUDIO')}>
+            <Link className='flex justify-center' to="/gallery">
+              Galeria de Áudios
+            </Link>
+          </div>
+        ),
+      }
+    ]
 
     return (
         <nav className='w-full fixed top-0 z-10'>
@@ -138,12 +173,14 @@ export const Header = ({currentPage}: HeaderProps) => {
                     <>
                       <button key="Link1" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('MATERIAS')}
                         style={{ color: currentPage == 'MATERIAS' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'MATERIAS' ? '#254E22' : undefined }}>
-                          MATÉRIAS
+                        MATÉRIAS
                       </button>
-                      <button key="Link2" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('GALERIA')}
-                        style={{ color: currentPage == 'GALERIA' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'GALERIA' ? '#254E22' : undefined }}>
-                        GALERIA
-                      </button>
+                      <Dropdown menu={{items: itensGallery}} placement='bottom'>
+                        <button key="Link2" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('GALERIA')}
+                          style={{ color: currentPage == 'GALERIA' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'GALERIA' ? '#254E22' : undefined }}>
+                          GALERIA
+                        </button>
+                      </Dropdown>
                       <button key="Link3" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('AREA DO TORCEDOR')}
                         style={{ color: currentPage == 'AREA DO TORCEDOR' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'AREA DO TORCEDOR' ? '#254E22' : undefined }}>
                         ÁREA DO TORCEDOR
