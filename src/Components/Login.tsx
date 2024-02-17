@@ -14,6 +14,12 @@ export const Login = () => {
     const navigate = useNavigate();
 
     const [value, setValue] = useSessionStorage('user', false);
+    const [points, setPoints] = useSessionStorage('points', 0);
+    const [rewards, setRewards] = useSessionStorage('rewards', {
+        1: false,
+        2: false,
+        3: false,
+    });
 
     const success = () => {
         messageApi.open({
@@ -36,6 +42,12 @@ export const Login = () => {
 
     const handleClick = () => {
         if(username === 'a' && password === '1') {
+            setPoints(790);
+            setRewards({
+                1: false,
+                2: false,
+                3: false,
+            });
             success()
         } else {
             error()

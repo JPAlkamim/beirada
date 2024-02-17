@@ -3,6 +3,8 @@ import { Header } from '../Header';
 import { Footer } from '../Footer';
 import { MainGallery } from './MainGallery';
 import { GalleryPhotos } from './GalleryPhotos';
+import { GalleryVideos } from './GalleryVideos';
+import { GalleryAudios } from './GalleryAudios';
 import { useSessionStorage } from 'usehooks-ts';
 import image1 from '../../assets/fourByfour.png'
 
@@ -20,22 +22,17 @@ export const Gallery = () => {
             }
             {
                 galeryType === 'VIDEOS' && (
-                    <div className='mt-64'>
-                        <p>Galeria de vídeos</p>
-                    </div>
-                
+                   <GalleryVideos />
                 )
             }
             {
                 galeryType === 'AUDIO' && (
-                    <div className='mt-64'>
-                        <p>Galeria de áudios</p>
-                    </div>
+                    <GalleryAudios />
                 )
             }
             {
                 galeryType === '' && (
-                    <MainGallery/>
+                    <MainGallery />
                 )
             }
             <Footer/>

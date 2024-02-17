@@ -21,12 +21,17 @@ export const Header = ({currentPage}: HeaderProps) => {
     const [search, setSearch] = React.useState(false)
     const [isLogged, setIsLogged] = useSessionStorage('user', false);
     const [galeryType, setGaleryType] = useSessionStorage('galeryType', '');
+    const [photoDetail, setPhotoDetail] = useSessionStorage('photoDetail', false);
+    const [fanAreaType, setFanAreaType] = useSessionStorage('fanAreaType', '');
+    const [points, setPoints] = useSessionStorage('points', 0);
+
     const navigate = useNavigate();
     const [messageApi, contextHolder] = message.useMessage();
 
     const handleHeaderClick = (goTo: string) => {
       if (goTo) {
         setGaleryType('');
+        setFanAreaType('');
         navigate(dict[goTo]);
       }
     };
@@ -40,6 +45,12 @@ export const Header = ({currentPage}: HeaderProps) => {
       setTimeout(() => {
         navigate("/");
       }, 1000);
+    }
+
+    const GalleryPhoto = () => {
+      setGaleryType('PHOTO');
+      setPhotoDetail(false);
+      navigate('/gallery');
     }
 
     const itemsNotLogged = [
@@ -84,7 +95,7 @@ export const Header = ({currentPage}: HeaderProps) => {
       {
         key: '1',
         label: (
-          <div onClick={() => setGaleryType('PHOTO')}>
+          <div onClick={GalleryPhoto}>
             <Link className='flex justify-center' to="/gallery">
               Galeria de Fotos
             </Link>
@@ -113,6 +124,49 @@ export const Header = ({currentPage}: HeaderProps) => {
       }
     ]
 
+    const itensFanArea = [
+      {
+        key: '1',
+        label: (
+          <div onClick={() => setFanAreaType('QUIZ')}>
+            <Link className='flex justify-center' to="/fanarea">
+              Quizes
+            </Link>
+          </div>
+        ),
+      },
+      {
+        key: '2',
+        label: (
+          <div onClick={() => setFanAreaType('SURVEY')}>
+            <Link className='flex justify-center' to="/fanarea">
+              Enquetes
+            </Link>
+          </div>
+        ),
+      },
+      {
+        key: '3',
+        label: (
+          <div onClick={() => setFanAreaType('GUESS')}>
+            <Link className='flex justify-center' to="/fanarea">
+              Palpites
+            </Link>
+          </div>
+        ),
+      },
+      {
+        key: '4',
+        label: (
+          <div onClick={() => setFanAreaType('REWARD')}>
+            <Link className='flex justify-center' to="/fanarea">
+              Recompensas
+            </Link>
+          </div>
+        ),
+      }
+    ]
+
     return (
         <nav className='w-full fixed top-0 z-10'>
             {contextHolder}
@@ -126,7 +180,7 @@ export const Header = ({currentPage}: HeaderProps) => {
                 <div className="flex gap-8 mr-20">
                   <div className="flex gap-1">
                     { isLogged && (
-                      <p className='' style={{color: '#FCF9F7'}}> 13 </p>
+                      <p className='' style={{color: '#FCF9F7'}}> {points} </p>
                     )
                     }
                     <button>
@@ -181,10 +235,12 @@ export const Header = ({currentPage}: HeaderProps) => {
                           GALERIA
                         </button>
                       </Dropdown>
-                      <button key="Link3" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('AREA DO TORCEDOR')}
-                        style={{ color: currentPage == 'AREA DO TORCEDOR' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'AREA DO TORCEDOR' ? '#254E22' : undefined }}>
-                        ÁREA DO TORCEDOR
-                      </button>
+                      <Dropdown menu={{items: itensFanArea}} placement='bottom'>
+                        <button key="Link3" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('AREA DO TORCEDOR')}
+                          style={{ color: currentPage == 'AREA DO TORCEDOR' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'AREA DO TORCEDOR' ? '#254E22' : undefined }}>
+                          ÁREA DO TORCEDOR
+                        </button>
+                      </Dropdown>
                       <button key="Link4" className="text-white font-semibold p-2 rounded" onClick={() => handleHeaderClick('SOBRE')}
                        style={{ color: currentPage == 'SOBRE' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'SOBRE' ? '#254E22' : undefined }}>
                         SOBRE
@@ -197,7 +253,7 @@ export const Header = ({currentPage}: HeaderProps) => {
                 )
               }
             </div>
-            <div className="flex justify-between items-center h-1" style={{backgroundColor: "#254E22"}}></div>
+            <div className="flex justify-between items-center h-0.5" style={{backgroundColor: "#254E22"}}></div>
         </nav>
     )
 }
