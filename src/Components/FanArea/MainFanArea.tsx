@@ -93,6 +93,7 @@ export const MainFanArea = () => {
                     <p className='text-base ml-2' style={{ color: '#292822', fontFamily: 'Barlow'}}>00 / 10 respondidas - 0 Acertos </p>
                     <Button className='m-2 w-44 font-bold justify-self-end rounded-none'
                                 type="primary"
+                                onClick={() => setFanAreaType('QUIZ')}
                                 style={{fontFamily: 'Barlow', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
                 </div>
             </div>

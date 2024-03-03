@@ -3,8 +3,24 @@
 @tailwind utilities;
 
 html {
-  background-color: #FCF9F7;
+  background-color: #fcf9f7;
 }
+
+@font-face {
+  font-family: barlowRegular;
+  src: url('./fonts/Barlow-Regular.ttf');
+}
+
+@font-face {
+  font-family: barlowBold;
+  src: url('./fonts/Barlow-Bold.ttf');
+}
+
+@font-face {
+  font-family: barlowItalic;
+  src: url('./fonts/Barlow-Italic.ttf');
+}
+
 /* *,
 *::after,
 *::before {

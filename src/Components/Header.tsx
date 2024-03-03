@@ -176,7 +176,7 @@ export const Header = ({currentPage}: HeaderProps) => {
                         <img src={logo} alt="logo" className="logoImage" style={{width: '200px'}} />
                     </Link>
                 </div>
-                <p className='ml-4 font-semibold text-2xl mr-auto'  style={{color: '#FCF9F7', fontFamily: 'Barlow'}}>Na risca do futebol amador</p>
+                <p className='ml-4 font-semibold text-2xl mr-auto'  style={{color: '#FCF9F7', fontFamily: 'barlowBold'}}>Na risca do futebol amador</p>
                 <div className="flex gap-8 mr-20">
                   <div className="flex gap-1">
                     { isLogged && (

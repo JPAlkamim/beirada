@@ -42,7 +42,7 @@ export const Login = () => {
 
     const handleClick = () => {
         if(username === 'a' && password === '1') {
-            setPoints(790);
+            setPoints(0);
             setRewards({
                 1: false,
                 2: false,
