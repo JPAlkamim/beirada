@@ -5,7 +5,7 @@ import Materia1 from '../assets/Materia1/foto 1 e capa.jpg';
 import Materia2 from '../assets/Materia2/foto 1 e capa.jpg';
 import Materia3 from '../assets/Materia3/foto 1.jpg';
 import { Link } from 'react-router-dom';
-import Subject from '../assets/Subject.png';
+import Subject from '../assets/subject.png';
 
 export const Subjects = () => {
     return (
