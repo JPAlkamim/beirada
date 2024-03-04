@@ -4,8 +4,8 @@ import Futebol from '../../assets/futebol.png'
 import { Button, message } from 'antd'
 import { useSessionStorage } from 'usehooks-ts'
 import quizImage from '../../assets/quizz foto.jpg'
-import time1 from '../../assets/palpites tio nenê.png'
-import time2 from '../../assets/palpites araucária fc.png'
+import time1 from '../../assets/palpites1.png'
+import time2 from '../../assets/palpites2.png'
 import { Link } from 'react-router-dom'
 
 export const MainFanArea = () => {

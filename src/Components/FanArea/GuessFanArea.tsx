@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Input, message } from 'antd';
-import time1 from '../../Assets/palpites tio nenê.png';
-import time2 from '../../Assets/palpites araucária fc.png';
+import time1 from '../../assets/palpites1.png';
+import time2 from '../../assets/palpites2.png';
 import ballSoccer from '../../assets/ballSoccer.svg';
 import { useSessionStorage } from 'usehooks-ts';
 
