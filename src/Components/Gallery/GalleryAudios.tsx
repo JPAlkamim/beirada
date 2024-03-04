@@ -3,6 +3,7 @@ import ReactJkMusicPlayer from 'react-jinke-music-player'
 import audio1 from '../../assets/audios/EntrevistaTioLuiz.wav'
 import audio2 from '../../assets/audios/EntrevistaProfessorPreto.wav'
 import audio3 from '../../assets/audios/EntrevistaEverson.wav'
+// @ts-ignore
 import useSound from 'use-sound'
 import Materia1 from '../../assets/Materia1/foto 1 e capa.jpg'
 import Materia2 from '../../assets/Materia2/foto 1 e capa.jpg'
