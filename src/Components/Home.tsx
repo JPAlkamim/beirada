@@ -4,6 +4,9 @@ import image2 from '../assets/sixteenByeight.png'
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { Link } from 'react-router-dom'
+import Materia1 from '../assets/Materia1/foto 1 e capa.jpg'
+import Materia2 from '../assets/Materia2/foto 1 e capa.jpg'
+import Galeria from '../assets/Fotos1/Capa do álbum.png'
 
 export const Home = () => {
     return (
@@ -14,29 +17,29 @@ export const Home = () => {
                     <div className='flex'>
                         <Link to={'/subjects'}>
                             <div className="relative">
-                                <img src={image1} alt="logo" className="w-screen" style={{height: '400px'}} />
+                                <img src={Materia1} alt="logo" className="w-screen" style={{height: '400px'}} />
                                 <div className="absolute bottom-4 left-4">
-                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'Barlow'}}>MATÉRIAS</p>
-                                    <p className='text-6xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                    <p className='text-2xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
+                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
+                                    <p className='text-lg font-bold mt-4' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>“O futebol respira e nós somos o oxigênio”; entrevista com Tio Luiz, do Canal Meia na Canela</p>
+                                    <p className='text-sm font-bold mt-4' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O influenciador explicou a motivação para a criação do canal e a dedicação em dar voz ao futebol amador maringaense</p>
                                 </div>
                             </div>
                         </Link>    
                         <div className='gap-2 flex-row'>
                             <div className="relative">
-                                <img src={image2} alt="logo" className="w-screen" style={{height: '200px'}} />
+                                <img src={Galeria} alt="logo" className="w-screen" style={{height: '200px'}} />
                                 <div className="absolute bottom-4 left-4">
-                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'Barlow'}}>GALERIA DE FOTOS</p>
-                                    <p className='text-3xl font-bold mt-1' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                    <p className='text-lg font-bold' style={{ color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
+                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>GALERIA DE FOTOS</p>
+                                    <p className='text-3xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>Título</p>
+                                    <p className='text-lg font-bold' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>Resumo</p>
                                 </div>
                             </div>
                             <div className="relative">
                                 <img src={image2} alt="logo" className="w-screen" style={{height: '200px'}} />
                                 <div className="absolute bottom-4 left-4">
-                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'Barlow'}}>ÁREA DO TORCEDOR - QUIZ</p>
-                                    <p className='text-3xl font-bold mt-1' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                    <p className='text-2xl font-bold' style={{ color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
+                                    <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>ÁREA DO TORCEDOR - QUIZ</p>
+                                    <p className='text-3xl font-bold mt-1' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Título</p>
+                                    <p className='text-2xl font-bold' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Resumo</p>
                                 </div>
                             </div>
                         </div>
@@ -48,23 +51,27 @@ export const Home = () => {
                 <div className='mx-24 my-10'>
                     <h1 className='font-bold text-2xl' style={{ color: '#254E22'}}>Últimas postagens</h1>
                 </div>
-
-                <div className='flex mx-24 my-10'>
-                    <img src={image1} alt="logo" className="logoImage" style={{height: '200px'}} />
-                    <div className="ml-5">
-                        <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'Barlow'}}>TEMA</p>
-                        <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                        <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>17/12/2023</p>
+                
+                <Link to={'/subjectcontentInterview'}>
+                    <div className='flex mx-24 my-10'>
+                        <img src={Materia1} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <div className="ml-5">
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowRegular'}}>O influenciador explicou a motivação para a criação do canal e a dedicação em dar voz ao futebol amador maringaense</p>
+                            <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'barlowBold'}}>“O futebol respira e nós somos o oxigênio”; entrevista com Tio Luiz, do Canal Meia na Canela</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>18/02/2024</p>
+                        </div>
                     </div>
-                </div>
-                <div className='flex mx-24 my-10'>
-                    <img src={image1} alt="logo" className="logoImage" style={{height: '200px'}} />
-                    <div className="ml-5">
-                        <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'Barlow'}}>TEMA</p>
-                        <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                        <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>17/12/2023</p>
+                </Link>
+                <Link to={'/subjectcontentProfessor'}>
+                    <div className='flex mx-24 my-10'>
+                        <img src={Materia2} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <div className="ml-5">
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowRegular'}}>Idealizador da Amistosos Eventos, Professor Preto contou como se orgulha do projeto e de como o futebol é parte importante de sua vida</p>
+                            <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Professor Preto: “A Amistosos é como se fosse um filho para mim”</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>18/02/2024</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
             <Footer />
         </>

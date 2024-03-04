@@ -23,13 +23,34 @@ export const SubjectContentThree = () => {
                 <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Everson é o responsável pela Copa Ricardo Gordo e comanda o Califórnia FC | Foto: Reprodução/Redes Sociais</p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Um bom exemplo é a Copa Ricardo Gordo de Futebol Suíço, que acontece em Sarandi-PR e conta com 16 times amadores do município. O campeonato, organizado pelo assessor político e comunicador Everson Natalino, conta com sorteio de grupos, chaveamento de confrontos, calendário definido e base de estatísticas, assim como um campeonato profissional. Todas as informações ficam reunidas no site da competição de maneira acessível e organizada.
+                Um bom exemplo é a Copa Ricardo Gordo de Futebol Suíço, que acontece em Sarandi-PR e conta com 16 times amadores do município. O campeonato, organizado pelo assessor político e comunicador Everson Natalino, conta com sorteio de grupos, chaveamento de confrontos, calendário definido e base de estatísticas, assim como um campeonato profissional. Todas as informações ficam reunidas no &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://campeonato.ifut.com.br/campeonato/copa-ricardo-gordo-de-futebol-suico/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'site da competição'}
+                </span>
+                &nbsp; de maneira acessível e organizada.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 A Copa Ricardo Gordo teve início no dia 14 de janeiro e alguns de seus jogos acontecem na Arena Barba Rala, em Sarandi. 
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Foi lá que o time de Everson, o Califórnia FC, enfrentou o Monte Rei, e o comandante do time pôde contar o papel que o futebol desempenha em sua vida e a importância da prática do futebol amador para a comunidade da região. A entrevista completa, em áudio, está disponível aqui.
+                Foi lá que o time de Everson, o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/california_fc_sdi/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Califórnia FC'}
+                </span>
+                , enfrentou o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/ec_monterei/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Monte Rei'}
+                </span>
+                , e o comandante do time pôde contar o papel que o futebol desempenha em sua vida e a importância da prática do futebol amador para a comunidade da região. A entrevista completa, em áudio, está disponível aqui.
                 </p>
                 <img src={Foto2} alt="subject" className="mx-auto w-auto max-w-screen-lg" />
                 <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
@@ -79,7 +100,14 @@ export const SubjectContentThree = () => {
                 Everson: Rival a gente não pode falar que a gente tem, mas tem alguns jogos que a gente gosta de jogar bem e não gosta de perder. Hoje o Monte Rei, para a gente, é bem complicado nos campeonatos mata-mata, a gente não tem muita felicidade contra eles, é uma equipe muito forte, que eu respeito muito. A gente não tem muita felicidade contra eles. Ganhamos deles no sábado passado em outro campeonato. Aí eles vieram com mais gosto ainda e venceram a gente pelo mesmo placar que a gente ganhou o outro. 
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Mas uma equipe como o Nego Stylo que está aqui jogando nesse momento, toda vez que a gente joga [contra] dá um embate muito forte, porque ninguém quer perder para o outro. Então assim, a gente tem alguns clubes que a gente sabe que aquele jogo vai ser jogão, vai ser um jogo pegado e que ninguém quer perder.
+                Mas uma equipe como o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/negostylofc/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Nego Stylo'}
+                </span>
+                &nbsp; que está aqui jogando nesse momento, toda vez que a gente joga [contra] dá um embate muito forte, porque ninguém quer perder para o outro. Então assim, a gente tem alguns clubes que a gente sabe que aquele jogo vai ser jogão, vai ser um jogo pegado e que ninguém quer perder.
                 </p>
 
 

@@ -26,10 +26,27 @@ export const SubjectContent = () => {
                 Foto: Reprodução/Redes Sociais/Canal Meia na Canela
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
+                Luiz Guilherme, mais conhecido como Tio Luiz, ao lado de Felipe Frida, são os responsáveis pelo &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.youtube.com/@canalmeianacanela/featured'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Canal Meia na Canela'}
+                </span>
+                &nbsp; que já conta com 10,8 mil inscritos no YouTube. O canal se dedica a evidenciar o futebol de Maringá-PR e região, tanto no profissional quanto no amador.
+                </p>
+                <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Luiz Guilherme, mais conhecido como Tio Luiz, ao lado de Felipe Frida, são os responsáveis pelo Canal Meia na Canela, que já conta com 10,8 mil inscritos no YouTube. O canal se dedica a evidenciar o futebol de Maringá-PR e região, tanto no profissional quanto no amador. 
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Mas é na “várzea” que eles fazem sucesso. Estando presentes em diversos campeonatos amadores organizados na região, os influenciadores, que criam conteúdo desde 2021,  já alcançaram mais de 25 mil seguidores nas redes sociais. Com o lema “O futebol respira e nós somos o oxigênio”, Tio Luiz e Frida se dedicam a mostrar os bastidores do futebol e dar voz aos apaixonados pela bola.
+                Mas é na “várzea” que eles fazem sucesso. Estando presentes em diversos campeonatos amadores organizados na região, os influenciadores, que criam conteúdo desde 2021,  já alcançaram mais de 25 mil seguidores nas &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/canalmeianacanela/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'redes sociais'}
+                </span>
+                . Com o lema “O futebol respira e nós somos o oxigênio”, Tio Luiz e Frida se dedicam a mostrar os bastidores do futebol e dar voz aos apaixonados pela bola.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 No domingo, 18 de fevereiro, foi a vez do canal estar presente na Copa Land View, no Bigbol Society, em Maringá. Foi o primeiro dia da competição organizada pela Amistosos Eventos, que reúne 96 equipes amadoras de fut7, divididas em seis divisões.
@@ -47,7 +64,35 @@ export const SubjectContent = () => {
                 Como surgiu a ideia de fazer o canal para falar de futebol aqui da região?</p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Tio Luiz: O futebol em Maringá é muito grande, seja no profissional – com o Maringá Futebol Clube, com o Galo [Maringá], com o Grêmio Maringá – e a várzea é muito maior. Tivemos a ideia através dos campeonatos de várzea que já aconteciam, se é que podemos chamar de várzea, porque são muito bem administrados pela Amistosos Eventos. É um campeonato de muita qualidade, com muitos times envolvidos, é um dos maiores campeonatos de fut7 do Brasil. 
+                Tio Luiz: O futebol em Maringá é muito grande, seja no profissional – com o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://gmconline.com.br/esportes/futebol/futebol-maringaense/faz-o-pix-maringa-fc-faz-dois-nos-acrescimos-vence-o-america-e-avanca-na-copa-do-brasil/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Maringá Futebol Clube'}
+                </span>
+                , com o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://gmconline.com.br/esportes/futebol/futebol-maringaense/galo-maringa-leva-virada-do-operario-e-e-rebaixado-no-campeonato-paranaense/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Galo [Maringá]'}
+                </span>
+                , com o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/gremio_maringa/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Grêmio Maringá'}
+                </span>
+                &nbsp; – e a várzea é muito maior. Tivemos a ideia através dos campeonatos de várzea que já aconteciam, se é que podemos chamar de várzea, porque são muito bem administrados pela &nbsp;
+                 <span
+                onClick={() => {window.location.href = 'https://www.amistosos.com.br/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Amistosos Eventos'}
+                </span>
+                 . É um campeonato de muita qualidade, com muitos times envolvidos, é um dos maiores campeonatos de fut7 do Brasil. 
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
@@ -59,7 +104,21 @@ export const SubjectContent = () => {
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Hoje são vários locais, várias arenas. Maringá tem um polo muito grande de arenas de futebol society e recebe competições a nível nacional: Paranaense de fut7, Liga Nacional de fut7 – onde no ano passado veio o Corinthians jogar aqui, veio o Flamengo. A partir de 2024, a CBF (Confederação Brasileira de Futebol) tem uma regulamentação que todos os times de [Campeonato Brasileiro] Série A precisam ter um time de fut7. E o fut7 vem da várzea, vem do jogador que gosta de jogar, sem receber para isso.
+                Hoje são vários locais, várias arenas. Maringá tem um polo muito grande de arenas de futebol society e recebe competições a nível nacional: &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.ff7pr.com.br/index.php'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Paranaense de fut7'}
+                </span>
+                , &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://cbf7.com.br/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Liga Nacional de fut7'}
+                </span>
+                &nbsp; – onde no ano passado veio o Corinthians jogar aqui, veio o Flamengo. A partir de 2024, a CBF (Confederação Brasileira de Futebol) tem uma regulamentação que todos os times de [Campeonato Brasileiro] Série A precisam ter um time de fut7. E o fut7 vem da várzea, vem do jogador que gosta de jogar, sem receber para isso.
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
@@ -83,7 +142,14 @@ export const SubjectContent = () => {
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                A partir disso criamos o canal e hoje a gente consegue estar no meio dessa rapaziada. A gente já fez muita coisa, [entrevistamos] Zico, Bebeto, muita gente, e todos eles têm a paixão pelo futebol, que eu acho que é o intuito do seu trabalho também, mostrar o que todo mundo gosta. O [jogo de] futebol todo mundo está olhando, os bastidores é o que é mais interessante. 
+                A partir disso criamos o canal e hoje a gente consegue estar no meio dessa rapaziada. A gente já fez muita coisa, [entrevistamos] &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.youtube.com/watch?v=j05I_xzh2Fo'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Zico'}
+                </span>
+                , Bebeto, muita gente, e todos eles têm a paixão pelo futebol, que eu acho que é o intuito do seu trabalho também, mostrar o que todo mundo gosta. O [jogo de] futebol todo mundo está olhando, os bastidores é o que é mais interessante. 
                 </p>
 
                 <p className='text-lg my-4 font-bold' style={{color: '#292822', fontFamily: 'barlowBold'}}>

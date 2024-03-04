@@ -19,7 +19,7 @@ export const Subjects = () => {
                                 <img src={Materia1} alt="Materia1" className="h-56 m-auto" />
                                 <div className="grid justify-center">
                                     <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>
-                                        Professor Preto: “A Amistosos é como se fosse um filho para mim”</p>
+                                    “O futebol respira e nós somos o oxigênio”; entrevista com Tio Luiz, do Canal Meia na Canela</p>
                                     <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>
                                     O influenciador explicou a motivação para a criação do canal e a dedicação em dar voz ao futebol amador maringaense
                                     </p>

@@ -5,6 +5,7 @@ import Capa from '../../assets/Materia2/foto 1 e capa.jpg';
 import Foto2 from '../../assets/Materia2/foto 2.jpg';
 import Foto3 from '../../assets/Materia2/foto 3.jpg';
 import Foto4 from '../../assets/Materia2/foto 4.jpg';
+import ReactPlayer from 'react-player';
 
 export const SubjectContentTwo = () => {
     return (
@@ -22,17 +23,60 @@ export const SubjectContentTwo = () => {
                 <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Professor Preto criou a Amistosos Eventos em 2014 | Foto: Arquivo pessoal</p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Eduardo Preto Grigório, mais conhecido como Professor Preto, tem uma vida dedicada ao futebol. Torcedor desde menino, estudante durante a graduação e professor desde o início da carreira, o criador da produtora de eventos esportivos Amistosos deu início a esta caminhada há dez anos.
+                Eduardo Preto Grigório, mais conhecido como Professor Preto, tem uma vida dedicada ao futebol. Torcedor desde menino, estudante durante a graduação e professor desde o início da carreira, o criador da &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/amistosos_eventos/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'produtora de eventos esportivos Amistosos'}
+                </span>
+                &nbsp; deu início a esta caminhada há dez anos.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Como uma espécie de plataforma do futebol amador de Maringá-PR e região, o site da Amistosos possibilita que equipes marquem partidas amigáveis entre si, a partir de um cadastro dos atletas e da agremiação. Depois do aceite ao desafio, o site libera os contatos das equipes para que haja a interação. Os placares das partidas também são divulgados após o confronto.
+                Como uma espécie de plataforma do futebol amador de Maringá-PR e região, o &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.amistosos.com.br/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'site da Amistosos'}
+                </span>
+                &nbsp; possibilita que equipes marquem partidas amigáveis entre si, a partir de um &nbsp;
+                 <span
+                onClick={() => {window.location.href = 'https://www.amistosos.com.br/cj/index.php'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'cadastro dos atletas e da agremiação'}
+                </span>
+                 . Depois do aceite ao desafio, o site libera os contatos das equipes para que haja a interação. Os placares das partidas também são divulgados após o confronto.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                O objetivo inicial de ser um intermediador, porém, logo se expandiu, e a Amistosos passou a organizar competições amadoras com a presença das equipes cadastradas no site. Atualmente, existem campeonatos de futsal infantil, futsal adulto e fut7 adulto, todos segmentados em diversas categorias e divisões, contando com centenas de equipes.
+                O objetivo inicial de ser um intermediador, porém, logo se expandiu, e a Amistosos passou a organizar competições amadoras com a presença das equipes cadastradas no site. Atualmente, &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.amistosos.com.br/competicoes/'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'existem campeonatos de futsal infantil, futsal adulto e fut7 adulto'}
+                </span>
+                , todos segmentados em diversas categorias e divisões, contando com centenas de equipes.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Dentre eles, a 13ª edição da Copa Land View de fut7 teve início no dia 18 de fevereiro e conta com 96 equipes distribuídas em seis divisões. Os duelos acontecem na Bigbol Society e na Arena Atlético Maringaense, em Maringá-PR.
+                Dentre eles, a 13ª edição da Copa Land View de fut7 teve início no dia 18 de fevereiro e conta com 96 equipes distribuídas em seis divisões. Os duelos acontecem na &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/bigbol.mga/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Bigbol Society'}
+                </span>
+                &nbsp; e na &nbsp; 
+                 <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/arenaatleticomaringaense/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Arena Atlético Maringaense'}
+                </span>
+                 , em Maringá-PR.
                 </p>
+                {/* <ReactPlayer url='https://www.instagram.com/p/C3d8Fhsvuee/?hl=pt-br' /> */}
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 No primeiro dia do evento, Professor Preto esteve na Bigbol Society para prestigiar os atletas e atender ao público presente. Ficou perceptível como ele é querido por todos naquele ambiente. Quando contava sobre a história do seu projeto e sobre sua ligação com o futebol, pessoas se dirigiram a ele por duas vezes para comprimentá-lo e o elogiarem, ao perceberem que a conversa estava sendo documentada.
                 </p>
@@ -48,7 +92,14 @@ export const SubjectContentTwo = () => {
                 Professor Preto: A Liga Amistosos em geral, a Amistosos Eventos, surgiu em agosto de 2014, através de um bate-papo num café, onde as equipes começaram a me procurar para eu intermediar a marcação de jogos para eles, jogo amistoso no caso. E aí um amigo meu estava comigo junto e falou ‘está aí o que a gente precisa fazer’.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Aí eu criei um site, amistosos.com.br, onde as equipes marcavam os jogos pelo site. O Facebook do futebol era o nosso site. E começou a dar muito certo. As equipes começaram a pedir campeonatos, torneios ali dentro, e nós começamos a organizar alguns pequenos torneios – aqui mesmo na Bigbol foram os primeiros. E as equipes começaram a gostar, começou a crescer.
+                Aí eu criei um site, 
+                <span
+                onClick={() => {window.location.href = 'http://amistosos.com.br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'amistosos.com.br'}
+                </span>
+                , onde as equipes marcavam os jogos pelo site. O Facebook do futebol era o nosso site. E começou a dar muito certo. As equipes começaram a pedir campeonatos, torneios ali dentro, e nós começamos a organizar alguns pequenos torneios – aqui mesmo na Bigbol foram os primeiros. E as equipes começaram a gostar, começou a crescer.
                 </p>
                 <img src={Foto2} alt="subject" className="mx-auto w-auto max-w-screen-lg" />
                 <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
@@ -131,6 +182,9 @@ export const SubjectContentTwo = () => {
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Professor Preto: Todo mundo me corneta bastante porque eu sou vascaíno, ‘né’? E aí, ‘pô’, o cara maringaense, nascido em Maringá, é vascaíno como? Mas aos 8 anos de idade, a minha paixão no futebol se consolidou ali, quando eu assisti uma grande final de Campeonato Brasileiro, Vasco e São Paulo [Final de 1989, no Estádio do Morumbi, em São Paulo]. O Vasco venceu por 2 a 0 [na realidade foi 1 a 0], campeão brasileiro. Foi o primeiro título do Vasco que eu assisti.
                 </p>
+                <div className="justify-self-center">
+                    <ReactPlayer url='https://youtu.be/yQbxISEfxY8?si=VmklUgGzjTRkPFUg' />
+                </div>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Eu estava em Minas Gerais, na casa do meu tio, que é jogador profissional de futebol, e foi com ele que eu fui para os campos. O meu pai nunca foi muito ligado ao futebol, mas sempre foi um incentivador. Mas o meu tio, o meu padrinho, sempre foi jogador profissional de futebol de campo, de futsal, e me levava para os campos. E aí, quando o Vasco foi campeão brasileiro, ele me deu uma camiseta oficial do Vasco e, desde então, a minha paixão pelo futebol se consolidou e o torcedor do Vasco cresceu. 
                 </p>
@@ -147,7 +201,14 @@ export const SubjectContentTwo = () => {
                 Professor Preto: Não, ainda não consigo ser exclusivo da Amistosos Eventos, porque hoje eu sou coordenador de esporte do Colégio Paraná. Há 15 anos eu estou no Colégio Paraná, sempre fui técnico de futsal lá e eu não consegui me desvincular dessa instituição ainda que me abriu as portas lá atrás pro meu trabalho. Deu tudo muito certo, graças a Deus. Então eu sinto que a instituição ainda precisa de mim e eu preciso da instituição. 
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Mas praticamente 90% do meu envolvimento hoje é Amistosos Eventos e Amistosos Wear. Há seis meses nós abrimos uma fábrica de uniformes esportivos para atender essa demanda de equipes que participam dos nossos eventos.
+                Mas praticamente 90% do meu envolvimento hoje é Amistosos Eventos e &nbsp;
+                <span
+                onClick={() => {window.location.href = 'https://www.instagram.com/amistososwear/?hl=pt-br'}}
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'Amistosos Wear'}
+                </span>
+                . Há seis meses nós abrimos uma fábrica de uniformes esportivos para atender essa demanda de equipes que participam dos nossos eventos.
                 </p>
 
                 <p className='text-lg my-4 font-bold' style={{color: '#292822', fontFamily: 'barlowBold'}}>
