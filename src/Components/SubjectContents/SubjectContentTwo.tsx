@@ -8,7 +8,6 @@ import Foto4 from '../../assets/Materia2/foto 4.jpg';
 import Materia1 from '../../assets/Materia1/foto 1 e capa.jpg';
 import Materia2 from '../../assets/Materia3/foto 1.jpg';
 import ReactPlayer from 'react-player';
-import InstagramPost from '../InstagramPost';
 import { Link } from 'react-router-dom';
 import { useSessionStorage } from 'usehooks-ts';
 
