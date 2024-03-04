@@ -22,7 +22,7 @@ export const Contact = () => {
             {contextHolder}
             <Header currentPage='CONTATO' />
             <div className="conten ml-10 mb-44 mt-64">
-                <p className='font-bold text-6xl mb-2' style={{color: '#292822', fontFamily: 'Barlow'}}>Contato</p>
+                <p className='font-bold text-6xl mb-2' style={{color: '#292822', fontFamily: 'barlowBold'}}>Contato</p>
                 <div className="grid justify-items-start max-w-4xl border-4 rounded  border-gray-950 p-2">
                     <p>Nome completo *</p>
                     <Input placeholder="Digite seu nome" />
@@ -35,7 +35,7 @@ export const Contact = () => {
                     <Button className='m-auto mt-4 w-44 ' 
                         type="primary"
                         onClick={sendContact}
-                        style={{fontFamily: 'Barlow', backgroundColor: '#AA591C' }}>Enviar</Button>
+                        style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>Enviar</Button>
 
                 </div>    
             </div>
