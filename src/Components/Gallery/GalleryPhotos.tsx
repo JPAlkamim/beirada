@@ -68,12 +68,12 @@ export const GalleryPhotos = () => {
             }
             {
             photoDetail == '' && (
-                <div className='mt-64 mb-24 mx-24 xl:mx-44'>
+                <div className='mt-64 mb-40 mx-24 xl:mx-44'>
                     <p  className='font-bold text-4xl my-4' style={{color: '#292822', fontFamily: 'Barlow'}}>
                         Galeria de Fotos</p>
-                    <div className='grid grid-cols-3 gap-6 justify-items-center'>
+                    <div className='grid grid-cols-2 gap-2 justify-items-center mt-20'>
                         <div className="cursor-pointer" onClick={() => setPhotoDetail('Gallery1')}>
-                            <img src={capa1} alt="image1" className="w-72 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
+                            <img src={capa1} alt="image1" className="w-80 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
                             <div className="grid justify-center">
                                 <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Copa Ricardo Gordo | 11/02/24 | Sarandi-PR</p>
                                 <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>Califórnia FC x Monte Rei e Nego Stylo x Seg Amaral se enfrentaram pela Copa Ricardo Gordo de Futebol Suíço, na Arena Barba Rala, em Sarandi-PR
@@ -81,38 +81,10 @@ export const GalleryPhotos = () => {
                             </div>
                         </div>
                         <div className="cursor-pointer" onClick={() => setPhotoDetail('Gallery2')}>
-                            <img src={capa2} alt="image1" className="w-72 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
+                            <img src={capa2} alt="image1" className="w-80 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
                             <div className="grid justify-center">
                                 <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Copa Land View | 18/02/24 | Maringá-PR</p>
                                 <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>O Bigbol Society, em Maringá-PR, recebeu o primeiro dia de competições da Copa Land View, organizada pela Amistosos Eventos</p>
-                            </div>
-                        </div>
-                        <div className=''>
-                            <img src={image1} alt="image1" className="w-72 h-56 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                <p className='text-lg text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
-                            </div>
-                        </div>
-                        <div className=''>
-                            <img src={image1} alt="image1" className="w-72 h-56 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                <p className='text-lg text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
-                            </div>
-                        </div>
-                        <div className=''>
-                            <img src={image1} alt="image1" className="w-72 h-56 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                <p className='text-lg text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
-                            </div>
-                        </div>
-                        <div className=''>
-                            <img src={image1} alt="image1" className="w-72 h-56 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                                <p className='text-lg text-center' style={{color: '#292822', fontFamily: 'Barlow'}}>Resumo</p>
                             </div>
                         </div>
                     </div>

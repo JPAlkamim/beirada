@@ -14,7 +14,7 @@ export const Subjects = () => {
                 <div className='overflow-auto h-fit mt-44'>
                     <div className='mx-24 xl:mx-44'>
                         <p className='font-bold text-4xl my-4' style={{color: '#292822', fontFamily: 'barlowBold'}}>Matérias</p>
-                        <div className='grid grid-cols-3 gap-6 justify-items-center'>
+                        <div className='grid grid-cols-3 gap-6 justify-items-center mt-20 mb-32'>
                             <Link className='' to={'/subjectcontentInterview'}>
                                 <img src={Materia1} alt="Materia1" className="h-56 m-auto" />
                                 <div className="grid justify-center">
@@ -43,7 +43,7 @@ export const Subjects = () => {
                                     A competição reúne diversas equipes amadoras das cidades de Sarandi e Marialva e movimenta a comunidade em torno do futebol </p>
                                 </div>
                             </Link>
-                            <div className=''>
+                            {/* <div className=''>
                                 <img src={Subject} alt="Subject" className="w-auto h-56" />
                                 <div className="grid justify-center">
                                     <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Título da matéria</p>
@@ -84,7 +84,7 @@ export const Subjects = () => {
                                     <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Título da matéria</p>
                                     <p className='text-lg text-center' style={{color: '#292822', fontFamily: 'barlowItalic'}}>Resumo</p>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

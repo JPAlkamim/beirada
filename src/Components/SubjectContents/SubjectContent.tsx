@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from '../Header'
 import { Footer } from '../Footer';
 import Capa from '../../assets/Materia1/foto 1 e capa.jpg';
 import Foto2 from '../../assets/Materia1/foto 2.jpg';
 import Foto3 from '../../assets/Materia1/foto 3.jpg';
 import Foto4 from '../../assets/Materia1/foto 4.jpg';
+import Materia1 from '../../assets/Materia2/foto 1 e capa.jpg';
+import Materia2 from '../../assets/Materia3/foto 1.jpg';
+import { Link } from 'react-router-dom';
+import { useSessionStorage } from 'usehooks-ts';
 
 export const SubjectContent = () => {
+    const [galeryType, setGaleryType] = useSessionStorage('galeryType', 'AUDIO');
+
+    useEffect(() => {
+       setGaleryType('AUDIO');
+    })
+
     return (
         <>
             <Header currentPage='MATERIAS'/>
@@ -55,7 +65,14 @@ export const SubjectContent = () => {
                 Durante toda a manhã, inúmeras partidas acontecem simultaneamente nos campos da arena, que recebe torcedores e mobiliza uma grande confraternização durante o tempo do evento.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
-                Em meio à “resenha”, Tio Luiz falou um pouco sobre o seu trabalho e explicou sua paixão pelo futebol. A entrevista completa, em áudio, está disponível aqui
+                Em meio à “resenha”, Tio Luiz falou um pouco sobre o seu trabalho e explicou sua paixão pelo futebol. A entrevista completa, em áudio, está disponível &nbsp;
+                <Link to={'/gallery'}>
+                <span
+                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                >
+                {'aqui.'}
+                </span>
+                </Link>
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Entrevista com Tio Luiz, do Canal Meia na Canela</p>
@@ -236,23 +253,27 @@ export const SubjectContent = () => {
                 <div className='my-10'>
                     <h1 className='font-bold text-2xl' style={{ color: '#254E22'}}>Últimas postagens</h1>
                 </div>
-
-                <div className='flex my-2'>
-                    {/* <img src={image1} alt="logo" className="logoImage" style={{height: '200px'}} /> */}
-                    <div className="ml-5">
-                        <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'Barlow'}}>TEMA</p>
-                        <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                        <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>17/12/2023</p>
+                
+                <Link to={'/subjectcontentProfessor'}>
+                    <div className='flex my-10'>
+                        <img src={Materia1} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <div className="ml-5">
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowRegular'}}>Idealizador da Amistosos Eventos, Professor Preto contou como se orgulha do projeto e de como o futebol é parte importante de sua vida</p>
+                            <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Professor Preto: “A Amistosos é como se fosse um filho para mim”</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>18/02/2024</p>
+                        </div>
                     </div>
-                </div>
-                <div className='flex my-10'>
-                    {/* <img src={image1} alt="logo" className="logoImage" style={{height: '200px'}} /> */}
-                    <div className="ml-5">
-                        <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'Barlow'}}>TEMA</p>
-                        <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>Título</p>
-                        <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'Barlow'}}>17/12/2023</p>
+                </Link>
+                <Link to={'/subjectcontentEverson'}>
+                    <div className='flex my-10'>
+                        <img src={Materia2} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <div className="ml-5">
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowRegular'}}>A competição reúne diversas equipes amadoras das cidades de Sarandi e Marialva e movimenta a comunidade em torno do futebol</p>
+                            <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Entrevista com Everson Natalino, organizador da Copa Ricardo Gordo</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>11/02/2024</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             </div>
             <Footer />
         </>

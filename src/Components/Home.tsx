@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom'
 import Materia1 from '../assets/Materia1/foto 1 e capa.jpg'
 import Materia2 from '../assets/Materia2/foto 1 e capa.jpg'
 import Galeria from '../assets/Fotos1/Capa do álbum.png'
+import quizImage from '../assets/quizz foto.jpg'
+
 
 export const Home = () => {
     return (
@@ -17,31 +19,34 @@ export const Home = () => {
                     <div className='flex'>
                         <Link to={'/subjects'}>
                             <div className="relative">
-                                <img src={Materia1} alt="logo" className="w-screen" style={{height: '400px'}} />
+                                <img src={Materia1} alt="logo" className="w-screen object-cover" style={{height: '400px'}} />
                                 <div className="absolute bottom-4 left-4">
                                     <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
                                     <p className='text-lg font-bold mt-4' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>“O futebol respira e nós somos o oxigênio”; entrevista com Tio Luiz, do Canal Meia na Canela</p>
                                     <p className='text-sm font-bold mt-4' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O influenciador explicou a motivação para a criação do canal e a dedicação em dar voz ao futebol amador maringaense</p>
                                 </div>
                             </div>
-                        </Link>    
+                        </Link>
                         <div className='gap-2 flex-row'>
+                            <Link to={'/gallery'}>
                             <div className="relative">
-                                <img src={Galeria} alt="logo" className="w-screen" style={{height: '200px'}} />
+                                <img src={Galeria} alt="logo" className="w-screen object-cover" style={{height: '200px'}} />
                                 <div className="absolute bottom-4 left-4">
                                     <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>GALERIA DE FOTOS</p>
                                     <p className='text-3xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>Título</p>
                                     <p className='text-lg font-bold' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>Resumo</p>
                                 </div>
                             </div>
+                            </Link>
+                            <Link to={'/fanarea'}>
                             <div className="relative">
-                                <img src={image2} alt="logo" className="w-screen" style={{height: '200px'}} />
+                                <img src={quizImage} alt="logo" className="w-screen object-cover" style={{height: '200px'}} />
                                 <div className="absolute bottom-4 left-4">
                                     <p className='text-lg font-bold' style={{ color: '#254E22', fontFamily: 'barlowBold'}}>ÁREA DO TORCEDOR - QUIZ</p>
-                                    <p className='text-3xl font-bold mt-1' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Título</p>
-                                    <p className='text-2xl font-bold' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Resumo</p>
+                                    <p className='text-lg font-bold mt-1' style={{ color: '#292822', fontFamily: 'barlowBold'}}>O que vocÊ sabe sobre a Copa Land View?</p>
                                 </div>
                             </div>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -18,9 +18,11 @@
     "antd": "^5.14.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-jinke-music-player": "^4.24.2",
     "react-photo-album": "^2.3.1",
     "react-player": "^2.14.1",
     "react-router-dom": "^6.22.0",
+    "use-sound": "^4.0.1",
     "usehooks-ts": "^2.13.0"
   },
   "devDependencies": {
