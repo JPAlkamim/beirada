@@ -11,6 +11,7 @@ import { SubjectContentTwo } from "./Components/SubjectContents/SubjectContentTw
 import { SubjectContentThree } from "./Components/SubjectContents/SubjectContentThree"
 import { Gallery } from "./Components/Gallery/Gallery"
 import { FanArea } from "./Components/FanArea/FanArea"
+import { Quiz } from "./Components/FanArea/Quiz"
 import { BrowserRouter as Router, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom"
 
 const router = createBrowserRouter(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
       <Route path="/subjectcontentEverson" element={<SubjectContentThree />} />
       <Route path="/gallery" element={<Gallery />} />
       <Route path="/fanarea" element={<FanArea />} />
+      <Route path="/quiz" element={<Quiz />} />
     </>
   )
 )

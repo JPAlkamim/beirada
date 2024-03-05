@@ -21,6 +21,21 @@ html {
   src: url('./fonts/Barlow-Italic.ttf');
 }
 
+@font-face {
+  font-family: loraRegular;
+  src: url('./fonts/Lora-Regular.ttf');
+}
+
+@font-face {
+  font-family: loraBold;
+  src: url('./fonts/Lora-Bold.ttf');
+}
+
+@font-face {
+  font-family: loraSemiBold;
+  src: url('./fonts/Lora-SemiBold.ttf');
+}
+
 /* *,
 *::after,
 *::before {

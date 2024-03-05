@@ -10,6 +10,7 @@ import capa2 from '../../assets/Fotos2/Capa do álbum.png'
 
 
 export const GalleryPhotos = () => {
+    // 
     const [photoDetail, setPhotoDetail] = useSessionStorage('photoDetail', '');
 
     return (
@@ -29,10 +30,12 @@ export const GalleryPhotos = () => {
                             <p className='text-xl mb-5' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Califórnia FC x Monte Rei e Nego Stylo x Seg Amaral se enfrentaram pela Copa Ricardo Gordo de Futebol Suíço, na Arena Barba Rala, em Sarandi-PR
                             </p>
                             </div>
-                            <p className='text-xl font-bold mb-5' style={{color: '#AA591C', fontFamily: 'barlowRegular'}}>Contribua para este álbum</p>
+                        </div>
+                        <div className="grid">
+                            <p className='text-xl font-bold ml-auto mb-5' style={{color: '#AA591C', fontFamily: 'barlowRegular'}}>Contribua para este álbum</p>
                         </div>
 
-                        <PhotoAlbum layout='rows' photos={images} />
+                        <PhotoAlbum layout='rows' photos={images}/>
 
                         <p  className='font-bold text-4xl my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                         Contribua com este álbum!</p>
@@ -55,7 +58,9 @@ export const GalleryPhotos = () => {
                             <p className='text-xl mb-5' style={{color: '#292822', fontFamily: 'barlowRegular'}}>O Bigbol Society, em Maringá-PR, recebeu o primeiro dia de competições da Copa Land View, organizada pela Amistosos Eventos
                             </p>
                             </div>
-                            <p className='text-xl font-bold mb-5' style={{color: '#AA591C', fontFamily: 'barlowRegular'}}>Contribua para este álbum</p>
+                        </div>
+                        <div className="grid">
+                            <p className='text-xl font-bold ml-auto mb-5' style={{color: '#AA591C', fontFamily: 'barlowRegular'}}>Contribua para este álbum</p>
                         </div>
 
                         <PhotoAlbum layout='rows' photos={images2} />
@@ -68,23 +73,23 @@ export const GalleryPhotos = () => {
             }
             {
             photoDetail == '' && (
-                <div className='mt-64 mb-40 mx-24 xl:mx-44'>
+                <div className='mt-52 mb-40 mx-24 xl:mx-44'>
                     <p  className='font-bold text-4xl my-4' style={{color: '#292822', fontFamily: 'barlowBold'}}>
                         Galeria de Fotos</p>
-                    <div className='grid grid-cols-2 gap-2 justify-items-center mt-20'>
+                    <div className='grid grid-cols-2 gap-32 justify-items-center mt-20'>
                         <div className="cursor-pointer" onClick={() => setPhotoDetail('Gallery1')}>
-                            <img src={capa1} alt="image1" className="w-80 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Copa Ricardo Gordo | 11/02/24 | Sarandi-PR</p>
-                                <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>Califórnia FC x Monte Rei e Nego Stylo x Seg Amaral se enfrentaram pela Copa Ricardo Gordo de Futebol Suíço, na Arena Barba Rala, em Sarandi-PR
+                            <img src={capa1} alt="image1" className="h-72 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
+                            <div className="grid justify-center mt-4">
+                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Copa Ricardo Gordo | 11/02/24 | Sarandi-PR</p>
+                                <p className='text-base text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Califórnia FC x Monte Rei e Nego Stylo x Seg Amaral se enfrentaram pela Copa Ricardo Gordo de Futebol Suíço, na Arena Barba Rala, em Sarandi-PR
                                 </p>
                             </div>
                         </div>
                         <div className="cursor-pointer" onClick={() => setPhotoDetail('Gallery2')}>
-                            <img src={capa2} alt="image1" className="w-80 h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
-                            <div className="grid justify-center">
-                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Copa Land View | 18/02/24 | Maringá-PR</p>
-                                <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>O Bigbol Society, em Maringá-PR, recebeu o primeiro dia de competições da Copa Land View, organizada pela Amistosos Eventos</p>
+                            <img src={capa2} alt="image1" className="h-72 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
+                            <div className="grid justify-center mt-4">
+                                <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Copa Land View | 18/02/24 | Maringá-PR</p>
+                                <p className='text-base text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>O Bigbol Society, em Maringá-PR, recebeu o primeiro dia de competições da Copa Land View, organizada pela Amistosos Eventos</p>
                             </div>
                         </div>
                     </div>

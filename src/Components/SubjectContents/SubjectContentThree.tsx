@@ -73,7 +73,7 @@ export const SubjectContentThree = () => {
                 O Califórnia FC foi derrotado pelo Monte Rei, por 3 a 0 | Créditos: Reprodução</p>
 
 
-                <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
+                <p className='text-3xl my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Entrevista com Everson Natalino, organizador da Copa Ricardo Gordo</p>
 
 

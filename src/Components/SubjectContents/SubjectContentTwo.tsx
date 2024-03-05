@@ -12,6 +12,7 @@ import { Link } from 'react-router-dom';
 import { useSessionStorage } from 'usehooks-ts';
 
 export const SubjectContentTwo = () => {
+    // mudar legenda para 1 a menos
     const [galeryType, setGaleryType] = useSessionStorage('galeryType', 'AUDIO');
 
     useEffect(() => {
@@ -29,16 +30,17 @@ export const SubjectContentTwo = () => {
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>18/02/2024 | por Felippe Gabriel</p>
                 <img src={Capa} alt="subject" className="mx-auto w-auto" />
-                <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
+                <p className='text-base justify-self-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Professor Preto criou a Amistosos Eventos em 2014 | Foto: Arquivo pessoal</p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Eduardo Preto Grigório, mais conhecido como Professor Preto, tem uma vida dedicada ao futebol. Torcedor desde menino, estudante durante a graduação e professor desde o início da carreira, o criador da &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.instagram.com/amistosos_eventos/'}}
-                style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'produtora de eventos esportivos Amistosos'}
-                </span>
+                <a href="https://www.instagram.com/amistosos_eventos/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'barlowRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'produtora de eventos esportivos Amistosos'}
+                    </span>
+                </a>
                 &nbsp; deu início a esta caminhada há dez anos.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
@@ -132,7 +134,7 @@ export const SubjectContentTwo = () => {
                 </span>
                 </Link>
                 </p>
-                <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
+                <p className='text-3xl my-4' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                 Entrevista com Professor Preto, criador da Amistosos Eventos</p>
 
                 <p className='text-lg my-4 font-bold' style={{color: '#292822', fontFamily: 'barlowBold'}}>

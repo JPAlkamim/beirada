@@ -3,12 +3,14 @@ import image2 from '../../assets/sixteenByeight.png'
 import { Button, message } from 'antd';
 import { useSessionStorage } from 'usehooks-ts';
 import quizImage from '../../assets/quizz foto.jpg'
+import { useNavigate } from 'react-router-dom';
 
 
 export const QuizFanArea = () => {
     const [messageApi, contextHolder] = message.useMessage();
     const [value, setValue] = useSessionStorage('user', false);
     const [points, setPoints] = useSessionStorage('points', 0);
+    const navigate = useNavigate();
 
     const error = () => {
         messageApi.open({
@@ -19,7 +21,7 @@ export const QuizFanArea = () => {
 
     const handleInitQuiz = () => {
         if (value) {
-            setPoints(points + 100);
+            navigate('/quiz')
         } else {
             error()
         }
@@ -29,7 +31,7 @@ export const QuizFanArea = () => {
         <>
             {contextHolder}
             <div className='mt-48 mb-24 mx-24 xl:mx-44'>
-                <p className='font-bold text-4xl my-3 text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Quizzes</p>
+                <p className='font-bold text-4xl my-3 text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Quizzes</p>
                 <div className="relative mb-8 w-4/5 m-auto">
                     <img src={quizImage} alt="logo" className="w-full object-cover" style={{height: '200px'}} />
                     <div className="absolute bottom-4 left-4">
@@ -40,10 +42,10 @@ export const QuizFanArea = () => {
                         <Button className='m-2 w-44 font-bold justify-self-end rounded-none'
                                     type="primary"
                                     onClick={handleInitQuiz}
-                                    style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
+                                    style={{fontFamily: 'barlowBold', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
                     </div>
                 </div>
-                <div className="relative mb-8 w-4/5 m-auto">
+                {/* <div className="relative mb-8 w-4/5 m-auto">
                     <img src={image2} alt="logo" className="w-full" style={{height: '200px'}} />
                     <div className="absolute bottom-4 left-4">
                         <p className='text-3xl font-bold mt-1' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>Título</p>
@@ -64,7 +66,7 @@ export const QuizFanArea = () => {
                         <p className='text-base' style={{ color: '#FCF9F7', fontFamily: 'barlowRegular'}}>10 / 10 respondidas - 8 Acertos </p>
                         <p className='text-2xl' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>Você ganhou - pontos</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </>
     )

@@ -78,7 +78,7 @@ export const GalleryAudios = () => {
         <div className='mt-64 mb-40 mx-24'>
             <div className="grid grid-cols-3 gap-6 justify-items-center">
             <div>
-                <img src={Materia1} alt="Materia3" className="h-48 rounded-2xl m-auto" />
+                <img src={Materia1} alt="Materia3" className="h-48 m-auto" />
                 <button
                     onClick={handlePlay1}
                     className='mt-4 m-auto flex '
@@ -110,13 +110,13 @@ export const GalleryAudios = () => {
                 <div className="grid justify-center">
                     <p className='text-lg font-bold text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>
                     “O futebol respira e nós somos o oxigênio”; entrevista com Tio Luiz, do Canal Meia na Canela</p>
-                    <p className='text-base text-center italic' style={{color: '#292822', fontFamily: 'barlowItalic'}}>
+                    <p className='text-base text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>
                     O influenciador explicou a motivação para a criação do canal e a dedicação em dar voz ao futebol amador maringaense
                     </p>
                 </div>
             </div>
             <div>
-                <img src={Materia2} alt="Materia3" className="h-48 rounded-2xl m-auto" />
+                <img src={Materia2} alt="Materia3" className="h-48 m-auto" />
                 <button
                     onClick={handlePlay2}
                     className='mt-4 m-auto flex'
@@ -153,7 +153,7 @@ export const GalleryAudios = () => {
                 </div>
             </div>
             <div>
-                <img src={Materia3} alt="Materia3" className="h-48 rounded-2xl m-auto" />
+                <img src={Materia3} alt="Materia3" className="h-48 m-auto" />
                 <button
                     onClick={handlePlay3}
                     className='mt-4 m-auto flex'

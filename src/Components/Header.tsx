@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import logo from '../assets/LogoIcon.svg'
 import { Button, Dropdown, Input, MenuProps, message } from 'antd'
 import { Link, useNavigate } from 'react-router-dom';
-import { DownOutlined, SmileOutlined } from '@ant-design/icons';
+import { DownOutlined, InstagramOutlined, SmileOutlined } from '@ant-design/icons';
 import { useSessionStorage } from 'usehooks-ts';
 
 type HeaderProps = {
@@ -102,16 +102,16 @@ export const Header = ({currentPage}: HeaderProps) => {
           </div>
         ),
       },
-      {
-        key: '2',
-        label: (
-          <div onClick={() => setGaleryType('VIDEOS')}>
-            <Link className='flex justify-center' to="/gallery">
-              Galeria de Vídeos
-            </Link>
-          </div>
-        ),
-      },
+      // {
+      //   key: '2',
+      //   label: (
+      //     <div onClick={() => setGaleryType('VIDEOS')}>
+      //       <Link className='flex justify-center' to="/gallery">
+      //         Galeria de Vídeos
+      //       </Link>
+      //     </div>
+      //   ),
+      // },
       {
         key: '3',
         label: (
@@ -249,9 +249,13 @@ export const Header = ({currentPage}: HeaderProps) => {
                         style={{ color: currentPage == 'CONTATO' ? '#FCF9F7' : '#254E22', backgroundColor: currentPage == 'CONTATO' ? '#254E22' : undefined }}>
                         CONTATO
                       </button>
+                      
                     </>
                 )
               }
+              {/* <button>
+              <InstagramOutlined />
+              </button> */}
             </div>
             <div className="flex justify-between items-center h-0.5" style={{backgroundColor: "#254E22"}}></div>
         </nav>

@@ -22,14 +22,13 @@ export const SurveyFanArea = () => {
 
     const contentStyle: React.CSSProperties = {
         height: '450px',
-        color: '#fff',
         background: '#f5e6db',
       };
 
       const twoColors: ProgressProps['strokeColor'] = {
-        '0%': '#2206AB',
-        '50%': '#108ee9',
-        '100%': '#87d068',
+        '0%': '#254E22',
+        '60%': '#8BA265',
+        '100%': '#8BA265',
       };
 
     useEffect(() => {
@@ -94,7 +93,7 @@ export const SurveyFanArea = () => {
             {contextHolder}
             <div className='mt-52 mb-12 mx-24 xl:mx-44'>
                 <p className='font-bold text-6xl my-3 gray fill-cyan-700' style={{color: '#292822', fontFamily: 'barlowBold'}}>Enquetes</p>
-                <Carousel dots={{className: 'fill-cyan-400'}}>
+                <Carousel arrows={true} dots={{className: 'black'}} className=''>
                     <div>
                         <div style={contentStyle}>
                             <div className='mx-12 p-12'>
@@ -103,7 +102,7 @@ export const SurveyFanArea = () => {
                                 <p className='text-xl' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Maringá</p>
                                 </div>
                                 <p className='text-2xl mb-10 font-bold' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Quem será o campeão da Copa Land View 1ª Divisão Semestre I 2024?</p>
-                                <div className='flex'>
+                                <div className='flex mb-2'>
                                     {
                                         buttonClicked && (
                                             <Progress percent={percentage1} strokeColor={twoColors} />
@@ -124,7 +123,7 @@ export const SurveyFanArea = () => {
                                     }
                                 </div>
 
-                                <div className='flex'>
+                                <div className='flex mb-2'>
                                     {
                                         buttonClicked && (
                                             <Progress percent={percentage2} strokeColor={twoColors} />
@@ -145,7 +144,7 @@ export const SurveyFanArea = () => {
                                     }
                                 </div>
 
-                                <div className='flex'>
+                                <div className='flex mb-2'>
                                     {
                                         buttonClicked && (
                                             <Progress percent={percentage3} strokeColor={twoColors} />
@@ -166,7 +165,7 @@ export const SurveyFanArea = () => {
                                     }
                                 </div>
 
-                                <div className='flex'>
+                                <div className='flex mb-2'>
                                     {
                                         buttonClicked && (
                                             <Progress percent={percentage4} strokeColor={twoColors} />

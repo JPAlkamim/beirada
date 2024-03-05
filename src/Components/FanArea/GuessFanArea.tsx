@@ -63,14 +63,14 @@ export const GuessFanArea = () => {
                     <div className='grid mt-2 p-2 h-80'>
                         <div className=''>
                             <p className='text-center text-2xl' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Copa Land View - 1ª Divisão - Semestre I 2024 - 3ª Rodada</p>
-                            <p className='text-center text-xl' style={{color: '#292822', fontFamily: 'barlowRegular'}}>17/02/2024 | 10h | Atlético Maringaense - Campo 2</p>
+                            <p className='text-center text-xl' style={{color: '#292822', fontFamily: 'barlowRegular'}}>17/03/2024 | 10h | Atlético Maringaense - Campo 2</p>
                         </div>
                         <div className='flex justify-center'>
-                            <img src={time1} alt="time1" className="w-36 h-36" />
+                            <img src={time1} alt="time1" className="h-36" />
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-14 h-40">
                                 <path fillRule="evenodd" d="M5.47 5.47a.75.75 0 0 1 1.06 0L12 10.94l5.47-5.47a.75.75 0 1 1 1.06 1.06L13.06 12l5.47 5.47a.75.75 0 1 1-1.06 1.06L12 13.06l-5.47 5.47a.75.75 0 0 1-1.06-1.06L10.94 12 5.47 6.53a.75.75 0 0 1 0-1.06Z" clipRule="evenodd" />
                             </svg>
-                            <img src={time2} alt="time2" className="w-36 h-36" />
+                            <img src={time2} alt="time2" className="h-28 mt-4" />
                         </div>
                     </div>
                     <div className='col-span-2 mt-2 '>
