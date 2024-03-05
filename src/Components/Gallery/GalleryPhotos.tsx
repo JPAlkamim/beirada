@@ -10,7 +10,6 @@ import capa2 from '../../assets/Fotos2/Capa do álbum.png'
 
 
 export const GalleryPhotos = () => {
-    // 
     const [photoDetail, setPhotoDetail] = useSessionStorage('photoDetail', '');
 
     return (

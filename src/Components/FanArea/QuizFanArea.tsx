@@ -30,19 +30,19 @@ export const QuizFanArea = () => {
     return (
         <>
             {contextHolder}
-            <div className='mt-48 mb-24 mx-24 xl:mx-44'>
+            <div className='mt-56 mb-96 mx-24 xl:mx-44'>
                 <p className='font-bold text-4xl my-3 text-center' style={{color: '#292822', fontFamily: 'barlowBold'}}>Quizzes</p>
                 <div className="relative mb-8 w-4/5 m-auto">
                     <img src={quizImage} alt="logo" className="w-full object-cover" style={{height: '200px'}} />
                     <div className="absolute bottom-4 left-4">
-                    <p className='text-lg font-bold mt-1' style={{ color: '#292822', fontFamily: 'barlowBold'}}>O que você sabe sobre a Copa Land View?</p>
+                    <p className='text-2xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O que você sabe sobre a Copa Land View?</p>
                     </div>
                     <div className='absolute bottom-4 right-4'>
-                        <p className='text-base ml-2' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>00 / 10 respondidas - 0 Acertos </p>
-                        <Button className='m-2 w-44 font-bold justify-self-end rounded-none'
+                    <p className='text-base ml-2 justify-center p-1' style={{width: '230px', color: '#292822', fontFamily: 'barlowBold', backgroundColor: '#FFF'}}>00 / 10 respondidas - 0 Acertos </p>
+                        <Button className='m-2 font-bold justify-self-end rounded-none'
                                     type="primary"
                                     onClick={handleInitQuiz}
-                                    style={{fontFamily: 'barlowBold', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
+                                    style={{width: '230px', fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
                     </div>
                 </div>
                 {/* <div className="relative mb-8 w-4/5 m-auto">

@@ -6,15 +6,13 @@ import Foto2 from '../../assets/Materia1/foto 2.jpg';
 import Foto3 from '../../assets/Materia1/foto 3.jpg';
 import Foto4 from '../../assets/Materia1/foto 4.jpg';
 import Materia1 from '../../assets/Materia2/foto 1 e capa.jpg';
-import Materia2 from '../../assets/Materia3/foto 1.jpg';
+import Materia2 from '../../assets/Materia3/foto 5 e capa.jpg';
 import { Link } from 'react-router-dom';
 import { useSessionStorage } from 'usehooks-ts';
 import { Input } from 'antd';
 import TextArea from 'antd/es/input/TextArea';
 
 export const SubjectContent = () => {
-    //colocar legenda de fotos menor e os nomes semibold
-    //mudar ultimas postagens
     const [galeryType, setGaleryType] = useSessionStorage('galeryType', 'AUDIO');
 
     useEffect(() => {
@@ -33,20 +31,21 @@ export const SubjectContent = () => {
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>18/02/2024 | por Felippe Gabriel</p>
                 <img src={Capa} alt="subject" className="mx-auto w-auto" />
-                <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
+                <p className='text-base justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Frida (à esquerda) e Tio Luiz (à direita), são os idealizadores do Canal Meia na Canela | 
                 </p>
-                <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
+                <p className='text-base justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Foto: Reprodução/Redes Sociais/Canal Meia na Canela
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Luiz Guilherme, mais conhecido como Tio Luiz, ao lado de Felipe Frida, são os responsáveis pelo &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.youtube.com/@canalmeianacanela/featured'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Canal Meia na Canela'}
-                </span>
+                <a href="https://www.youtube.com/@canalmeianacanela/featured" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Canal Meia na Canela'}
+                    </span>
+                </a> 
                 &nbsp; que já conta com 10,8 mil inscritos no YouTube. O canal se dedica a evidenciar o futebol de Maringá-PR e região, tanto no profissional quanto no amador.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
@@ -54,12 +53,13 @@ export const SubjectContent = () => {
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Mas é na “várzea” que eles fazem sucesso. Estando presentes em diversos campeonatos amadores organizados na região, os influenciadores, que criam conteúdo desde 2021,  já alcançaram mais de 25 mil seguidores nas &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.instagram.com/canalmeianacanela/?hl=pt-br'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'redes sociais'}
-                </span>
+                <a href="https://www.instagram.com/canalmeianacanela/?hl=pt-br" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'redes sociais'}
+                    </span>
+                </a>
                 . Com o lema “O futebol respira e nós somos o oxigênio”, Tio Luiz e Frida se dedicam a mostrar os bastidores do futebol e dar voz aos apaixonados pela bola.
                 </p>
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
@@ -85,34 +85,37 @@ export const SubjectContent = () => {
                 Como surgiu a ideia de fazer o canal para falar de futebol aqui da região?</p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: O futebol em Maringá é muito grande, seja no profissional – com o &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://gmconline.com.br/esportes/futebol/futebol-maringaense/faz-o-pix-maringa-fc-faz-dois-nos-acrescimos-vence-o-america-e-avanca-na-copa-do-brasil/'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Maringá Futebol Clube'}
-                </span>
+                <b>Tio Luiz:</b> O futebol em Maringá é muito grande, seja no profissional – com o &nbsp;
+                <a href="https://gmconline.com.br/esportes/futebol/futebol-maringaense/faz-o-pix-maringa-fc-faz-dois-nos-acrescimos-vence-o-america-e-avanca-na-copa-do-brasil/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Maringá Futebol Clube'}
+                    </span>
+                </a>
                 , com o &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://gmconline.com.br/esportes/futebol/futebol-maringaense/galo-maringa-leva-virada-do-operario-e-e-rebaixado-no-campeonato-paranaense/'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Galo [Maringá]'}
-                </span>
-                , com o &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.instagram.com/gremio_maringa/'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Grêmio Maringá'}
-                </span>
+                <a href="https://gmconline.com.br/esportes/futebol/futebol-maringaense/galo-maringa-leva-virada-do-operario-e-e-rebaixado-no-campeonato-paranaense/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Galo [Maringá]'}
+                    </span>
+                </a>
+                <a href="https://www.instagram.com/gremio_maringa/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Grêmio Maringá'}
+                    </span>
+                </a>
                 &nbsp; – e a várzea é muito maior. Tivemos a ideia através dos campeonatos de várzea que já aconteciam, se é que podemos chamar de várzea, porque são muito bem administrados pela &nbsp;
-                 <span
-                onClick={() => {window.location.href = 'https://www.amistosos.com.br/'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Amistosos Eventos'}
-                </span>
+                <a href="https://www.amistosos.com.br/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Amistosos Eventos'}
+                    </span>
+                </a>
                  . É um campeonato de muita qualidade, com muitos times envolvidos, é um dos maiores campeonatos de fut7 do Brasil. 
                 </p>
 
@@ -126,19 +129,21 @@ export const SubjectContent = () => {
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Hoje são vários locais, várias arenas. Maringá tem um polo muito grande de arenas de futebol society e recebe competições a nível nacional: &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.ff7pr.com.br/index.php'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Paranaense de fut7'}
-                </span>
+                <a href="https://www.ff7pr.com.br/index.php" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Paranaense de fut7'}
+                    </span>
+                </a>
                 , &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://cbf7.com.br/'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Liga Nacional de fut7'}
-                </span>
+                <a href="https://cbf7.com.br/" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Liga Nacional de fut7'}
+                    </span>
+                </a>
                 &nbsp; – onde no ano passado veio o Corinthians jogar aqui, veio o Flamengo. A partir de 2024, a CBF (Confederação Brasileira de Futebol) tem uma regulamentação que todos os times de [Campeonato Brasileiro] Série A precisam ter um time de fut7. E o fut7 vem da várzea, vem do jogador que gosta de jogar, sem receber para isso.
                 </p>
 
@@ -147,7 +152,7 @@ export const SubjectContent = () => {
                 </p>
 
                 <img src={Foto2} alt="subject" className="mx-auto max-w-screen-lg" />
-                <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
+                <p className='text-base justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 Equipes amadoras se enfrentam na Copa Land View de fut7 | Foto: Felippe Gabriel
                 </p>
 
@@ -155,7 +160,7 @@ export const SubjectContent = () => {
                 Qual é a sua relação com o futebol? De onde surgiu isso?</p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: Acho que como todo brasileiro, nós temos de berço um time do coração. O seu pai vai te passar o time dele, o seu avô vai – se não for o mesmo time – fazer você ser do time do seu avô, enfim. E o futebol no Brasil é o que movimenta, ‘né’? Ele é o nosso primeiro esporte enquanto meninos, e hoje a gente vê até enquanto meninas também. 
+                <b>Tio Luiz:</b> Acho que como todo brasileiro, nós temos de berço um time do coração. O seu pai vai te passar o time dele, o seu avô vai – se não for o mesmo time – fazer você ser do time do seu avô, enfim. E o futebol no Brasil é o que movimenta, ‘né’? Ele é o nosso primeiro esporte enquanto meninos, e hoje a gente vê até enquanto meninas também. 
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
@@ -164,12 +169,13 @@ export const SubjectContent = () => {
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 A partir disso criamos o canal e hoje a gente consegue estar no meio dessa rapaziada. A gente já fez muita coisa, [entrevistamos] &nbsp;
-                <span
-                onClick={() => {window.location.href = 'https://www.youtube.com/watch?v=j05I_xzh2Fo'}}
-                style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
-                >
-                {'Zico'}
-                </span>
+                <a href="https://www.youtube.com/watch?v=j05I_xzh2Fo" target="_blank" rel="noopener noreferrer">
+                    <span
+                        style={{ color: '#254E22', fontFamily: 'loraRegular', cursor: 'pointer', textDecoration: 'underline' }}
+                    >
+                        {'Zico'}
+                    </span>
+                </a>
                 , Bebeto, muita gente, e todos eles têm a paixão pelo futebol, que eu acho que é o intuito do seu trabalho também, mostrar o que todo mundo gosta. O [jogo de] futebol todo mundo está olhando, os bastidores é o que é mais interessante. 
                 </p>
 
@@ -177,7 +183,7 @@ export const SubjectContent = () => {
                 Vocês criaram o canal, mas vocês têm alguma outra profissão? </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: Sim. Eu sou dentista, o Felipe Frida é médico veterinário, e nós criamos o Canal Meia na Canela como um hobby no começo. Foi na pandemia, [tinha] muito podcast, e aí [pensamos] ‘vamos sair só do estúdio, deixar de fazer um pouquinho de podcast e vamos para o meio da galera, vamos entrevistar o pessoal na rua mesmo, no campeonato, no jogo’. 
+                <b>Tio Luiz:</b> Sim. Eu sou dentista, o Felipe Frida é médico veterinário, e nós criamos o Canal Meia na Canela como um hobby no começo. Foi na pandemia, [tinha] muito podcast, e aí [pensamos] ‘vamos sair só do estúdio, deixar de fazer um pouquinho de podcast e vamos para o meio da galera, vamos entrevistar o pessoal na rua mesmo, no campeonato, no jogo’. 
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
@@ -185,7 +191,7 @@ export const SubjectContent = () => {
                 </p>
 
                 <img src={Foto3} alt="subject" className="mx-auto max-w-screen-lg" />
-                <p className='text-lg justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
+                <p className='text-base justify-self-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 A “resenha” pré e pós-jogo no futebol amador | Foto: Felippe Gabriel
                 </p>
 
@@ -193,7 +199,7 @@ export const SubjectContent = () => {
                 E quanto do seu tempo é dedicado ao Meia na Canela hoje? </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: Hoje é integral. Eu sou dentista, sim, mas o Meia na Canela toma meu tempo, seja no presencial, seja em editar um vídeo, seja em fazer conteúdo, criar… Porque hoje nós criamos uma comunidade. O que eu sempre falei, e o Frida também, o nosso senso de comunidade faz com que você tenha o pertencimento daquilo. Então, se você pertence àquela comunidade, você abraça ela e ela só cresce. 
+                <b>Tio Luiz:</b> Hoje é integral. Eu sou dentista, sim, mas o Meia na Canela toma meu tempo, seja no presencial, seja em editar um vídeo, seja em fazer conteúdo, criar… Porque hoje nós criamos uma comunidade. O que eu sempre falei, e o Frida também, o nosso senso de comunidade faz com que você tenha o pertencimento daquilo. Então, se você pertence àquela comunidade, você abraça ela e ela só cresce. 
                 </p>
 
                 <p className='text-lg my-4 font-bold' style={{color: '#292822', fontFamily: 'loraBold'}}>
@@ -201,7 +207,7 @@ export const SubjectContent = () => {
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: A gente sempre pensou o seguinte: ‘nunca fiz e nunca vou fazer por dinheiro’. A gente faz igual todo mundo que está aqui jogando, que também não ganha dinheiro para jogar. Nós fazemos por amor, realmente, e o dinheiro é consequência. 
+                <b>Tio Luiz:</b> A gente sempre pensou o seguinte: ‘nunca fiz e nunca vou fazer por dinheiro’. A gente faz igual todo mundo que está aqui jogando, que também não ganha dinheiro para jogar. Nós fazemos por amor, realmente, e o dinheiro é consequência. 
                 </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
@@ -212,18 +218,18 @@ export const SubjectContent = () => {
                 Você consegue explicar essa paixão de algum modo? </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: Eu acho que essa paixão vem da frustração. A frustração de não ter conseguido ser um jogador, de uma lesão, como nós vemos aí vários exemplos de jogadores que se lesionam e não voltam a ser o que eram, mas não deixam de participar do futebol. Acho que é o senso de participação mesmo, com aquela pitadinha de frustração. Mas o canal vem para estar no meio, participar disso mesmo que não seja jogando. 
+                <b>Tio Luiz:</b> Eu acho que essa paixão vem da frustração. A frustração de não ter conseguido ser um jogador, de uma lesão, como nós vemos aí vários exemplos de jogadores que se lesionam e não voltam a ser o que eram, mas não deixam de participar do futebol. Acho que é o senso de participação mesmo, com aquela pitadinha de frustração. Mas o canal vem para estar no meio, participar disso mesmo que não seja jogando. 
                 </p>
 
                 <p className='text-lg my-4 font-bold' style={{color: '#292822', fontFamily: 'loraBold'}}>
                 Qual o papel do futebol para o brasileiro, para essa galera que está aqui? </p>
 
                 <p className='text-lg my-4' style={{color: '#292822', fontFamily: 'loraRegular'}}>
-                Tio Luiz: Eu acho que socialmente, culturalmente, aqui é muito forte, não tem o que falar. O Brasil respira futebol. Você pode perguntar para a sua tia que às vezes nem assiste, mas ela tem o time do coração. Isso é o mais legal de tudo. Você vai para outros países, para a Europa, e tem gente que não tem time do coração. E nós somos criados desde o berço a ter um time do coração. Então, o futebol é passado de geração em geração, é a única hierarquia que ainda funciona no Brasil. 
+                <b>Tio Luiz:</b> Eu acho que socialmente, culturalmente, aqui é muito forte, não tem o que falar. O Brasil respira futebol. Você pode perguntar para a sua tia que às vezes nem assiste, mas ela tem o time do coração. Isso é o mais legal de tudo. Você vai para outros países, para a Europa, e tem gente que não tem time do coração. E nós somos criados desde o berço a ter um time do coração. Então, o futebol é passado de geração em geração, é a única hierarquia que ainda funciona no Brasil. 
                 </p>
 
                 <img src={Foto4} alt="subject" className="mx-auto max-w-screen-lg" />
-                <p className='text-lg justify-self-center text-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
+                <p className='text-base justify-self-center text-center' style={{color: '#292822', fontFamily: 'loraRegular'}}>
                 O médico veterinário Felipe Frida e o dentista Luiz Guilherme, que se dedicam ao futebol de Maringá-PR e região | Foto: Reprodução/Redes Sociais/Canal Meia na Canela
                 </p>
 
@@ -233,15 +239,6 @@ export const SubjectContent = () => {
                 <div className="border-2" style={{borderColor: 'gray'}}></div>
                 
                 <p className='font-bold text-4xl py-4' style={{color: '#292822', fontFamily: 'Barlow'}}>Comente!</p>
-                {/* <div className='flex'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-24 h-24" style={{color: '#AA591C'}}>
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                    </svg>
-                    <div>
-                        <p className='text-2xl font-bold' style={{color: '#AA591C', fontFamily: 'Barlow'}}>Você</p>
-                        <p className='text-lg' style={{color: '#292822', fontFamily: 'Barlow'}}>Aqui é pra escrever alguma coisa?</p>
-                    </div>
-                </div> */}
                 <div className='flex'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-24 h-24" style={{color: '#AA591C'}}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0 0 12 15.75a7.488 7.488 0 0 0-5.982 2.975m11.963 0a9 9 0 1 0-11.963 0m11.963 0A8.966 8.966 0 0 1 12 21a8.966 8.966 0 0 1-5.982-2.275M15 9.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -257,7 +254,7 @@ export const SubjectContent = () => {
                     </svg>
                     <div>
                         <p className='text-2xl font-bold' style={{color: '#AA591C', fontFamily: 'Barlow'}}>Nome</p>
-                        <TextArea className='w-full'/>
+                        <TextArea className='w-11/12'/>
                     </div>
                 </div>
 
@@ -271,9 +268,9 @@ export const SubjectContent = () => {
                     <div className='flex my-10'>
                         <img src={Materia1} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
                         <div className="ml-5">
-                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'loraRegular'}}>Idealizador da Amistosos Eventos, Professor Preto contou como se orgulha do projeto e de como o futebol é parte importante de sua vida</p>
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
                             <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'loraBold'}}>Professor Preto: “A Amistosos é como se fosse um filho para mim”</p>
-                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'loraRegular'}}>18/02/2024</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowregular'}}>18/02/2024</p>
                         </div>
                     </div>
                 </Link>
@@ -281,9 +278,9 @@ export const SubjectContent = () => {
                     <div className='flex my-10'>
                         <img src={Materia2} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
                         <div className="ml-5">
-                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'loraRegular'}}>A competição reúne diversas equipes amadoras das cidades de Sarandi e Marialva e movimenta a comunidade em torno do futebol</p>
+                            <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
                             <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'loraBold'}}>Entrevista com Everson Natalino, organizador da Copa Ricardo Gordo</p>
-                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'loraRegular'}}>11/02/2024</p>
+                            <p className='text-xl mt-4' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>11/02/2024</p>
                         </div>
                     </div>
                 </Link>

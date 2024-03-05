@@ -8,7 +8,6 @@ export const Quiz = () => {
     const contentStyle: React.CSSProperties = {
         height: '450px',
         background: '#f5e6db',
-        border: '12px solid #AA591C',
       };
 
     return (

@@ -93,11 +93,11 @@ export const MainFanArea = () => {
                     <p className='text-2xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O que você sabe sobre a Copa Land View?</p>
                 </div>
                 <div className='absolute bottom-4 right-4'>
-                    <p className='text-base ml-2 justify-center' style={{ color: '#292822', fontFamily: 'barlowBold', backgroundColor: '#FFF'}}>00 / 10 respondidas - 0 Acertos </p>
-                    <Button className='m-2 w-full font-bold justify-self-end rounded-none'
+                    <p className='text-base ml-2 justify-center p-1' style={{width: '230px', color: '#292822', fontFamily: 'barlowBold', backgroundColor: '#FFF'}}>00 / 10 respondidas - 0 Acertos </p>
+                    <Button className='m-2 font-bold justify-self-end rounded-none'
                                 type="primary"
                                 onClick={() => setFanAreaType('QUIZ')}
-                                style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
+                                style={{width: '230px', fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
                 </div>
             </div>
             <div className="" style={{borderColor: 'black', borderWidth: '1px'}}></div>
@@ -114,10 +114,10 @@ export const MainFanArea = () => {
                         <p className='text-xl' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Maringá</p>
                         <p className='text-2xl font-bold mb-2' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Quem será o campeão da Copa Land View 1ª Divisão Semestre I 2024?</p>
                         <div className='mt-16 grid grid-cols-2 gap-4'>
-                            <button className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Inimigos do ET FC</button>
-                            <button className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Tamo Junto FC</button>
-                            <button className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>S.E. Parisnacity</button>
-                            <button className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Outros</button>
+                            <button onClick={() => setFanAreaType('SURVEY')} className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Inimigos do ET FC</button>
+                            <button onClick={() => setFanAreaType('SURVEY')} className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Tamo Junto FC</button>
+                            <button onClick={() => setFanAreaType('SURVEY')} className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>S.E. Parisnacity</button>
+                            <button onClick={() => setFanAreaType('SURVEY')} className=' text-white font-bold p-2' style={{fontFamily: 'barlowRegular', backgroundColor: '#AA591C'}}>Outros</button>
                         </div>
                     </div>
                 </div>
