@@ -87,7 +87,7 @@ export const MainFanArea = () => {
             </p>
             <div className="" style={{borderColor: 'black', borderWidth: '1px'}}></div>
             <p className='font-bold text-4xl my-4' style={{color: '#292822', fontFamily: 'barlowBold'}}>Quizzes</p>
-            <div className="relative mb-8 w-4/5">
+            <div className="relative mb-8 w-4/5 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30">
                 <img src={quizImage} alt="logo" className="w-full object-cover" style={{height: '200px'}} />
                 <div className="absolute bottom-4 left-4">
                     <p className='text-2xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O que você sabe sobre a Copa Land View?</p>
@@ -178,7 +178,7 @@ export const MainFanArea = () => {
             <div className="border-4 mt-2" style={{borderColor: '#AA591C'}}></div>
             <div className='mt-4 grid grid-cols-3 gap-6 justify-items-center'>
                 <div className=''>
-                    <img src={Futebol} alt="subject" className="h-56 m-auto" />
+                    <img src={Futebol} alt="subject" className="h-56 m-auto transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
                     <div className="grid justify-center">
                         <p className='text-2xl font-bold text-center' style={{color: '#292822', fontFamily: 'barlowRegular'}}>Wallpaper</p>
                         <div className="flex justify-center">

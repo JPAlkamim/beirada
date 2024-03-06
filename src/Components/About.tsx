@@ -14,7 +14,7 @@ export const About = () => {
                 </div>
                 <div className="mx-24 my-44 grid justify-items-center">
                     <div className='flex'>
-                        <img src={FelippePhoto} alt="Felippe Augusto Gabriel" className="w-32 h-44 rounded-full mr-10" />
+                        <img src={FelippePhoto} alt="Felippe Augusto Gabriel" className="w-32 h-44 rounded-full mr-10 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" />
                         <div>
                             <p className='text-6xl font-bold mr-auto' style={{ color: '#292822', fontFamily: 'barlowBold'}}>Sobre o autor</p>
                             <p className='text-2xl mt-4 text-left' style={{ color: '#292822', fontFamily: 'barlowRegular'}}>Me chamo Felippe Augusto Gabriel, sou estudante do 4º ano do curso de Comunicação e Multimeios da UEM e sou estagiário na área do jornalismo. Corinthiano e apaixonado por futebol, tenho o sonho de me tornar um jornalista esportivo.</p>

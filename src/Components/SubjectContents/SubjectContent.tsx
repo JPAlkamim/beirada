@@ -266,7 +266,7 @@ export const SubjectContent = () => {
                 
                 <Link to={'/subjectcontentProfessor'}>
                     <div className='flex my-10'>
-                        <img src={Materia1} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <img src={Materia1} alt="logo" className="logoImage cursor-pointer transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" style={{height: '250px', width: '350px'}} />
                         <div className="ml-5">
                             <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
                             <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'loraBold'}}>Professor Preto: “A Amistosos é como se fosse um filho para mim”</p>
@@ -276,7 +276,7 @@ export const SubjectContent = () => {
                 </Link>
                 <Link to={'/subjectcontentEverson'}>
                     <div className='flex my-10'>
-                        <img src={Materia2} alt="logo" className="logoImage" style={{height: '250px', width: '350px'}} />
+                        <img src={Materia2} alt="logo" className="logoImage cursor-pointer transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30" style={{height: '250px', width: '350px'}} />
                         <div className="ml-5">
                             <p className='text-lg' style={{ color: '#AA591C', fontFamily: 'barlowBold'}}>MATÉRIAS</p>
                             <p className='text-4xl font-bold mt-4' style={{ color: '#292822', fontFamily: 'loraBold'}}>Entrevista com Everson Natalino, organizador da Copa Ricardo Gordo</p>
