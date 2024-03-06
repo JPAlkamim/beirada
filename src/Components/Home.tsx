@@ -28,7 +28,7 @@ export const Home = () => {
         <>
             <Header currentPage='' />
             <div className='mt-64'>
-                <div className='mx-24 my-10'>
+                <div className='mx-24 my-10 transition duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-black/30'>
                     <div className='flex'>
                         <Link to={'/subjects'}>
                             <div className="relative">
