@@ -12,6 +12,14 @@ type HeaderProps = {
 
 
 export const Header = ({currentPage}: HeaderProps) => {
+  const [correctAnswers, setCorrectAnswers] = useSessionStorage('correctAnswers', 0)
+    const [answeredQuestions, setAnsweredQuestions] = useSessionStorage('answeredQuestions', {
+        question1: false,
+        question2: false,
+        question3: false,
+        question4: false,
+        question5: false
+    });
     const dict: { [key: string]: string } = {
       "MATERIAS": "/subjects",
       "GALERIA": "/gallery",
@@ -42,6 +50,14 @@ export const Header = ({currentPage}: HeaderProps) => {
       messageApi.open({
         type: 'success',
         content: 'Você saiu da sua conta!',
+      });
+      setCorrectAnswers(0);
+      setAnsweredQuestions({
+        question1: false,
+        question2: false,
+        question3: false,
+        question4: false,
+        question5: false
       });
       setTimeout(() => {
         navigate("/");
