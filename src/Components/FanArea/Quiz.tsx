@@ -74,7 +74,7 @@ export const Quiz = () => {
                 type: 'success',
                 content: 'Resposta correta! + 40 pontos!',
             });
-            setPoints(points + 40);
+            setPoints(points + 150);
         } else {
             messageApi.open({
                 type: 'error',
