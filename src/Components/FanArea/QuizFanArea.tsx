@@ -7,6 +7,14 @@ import { useNavigate } from 'react-router-dom';
 
 
 export const QuizFanArea = () => {
+    const [correctAnswers, setCorrectAnswers] = useSessionStorage('correctAnswers', 0)
+    const [answeredQuestions, setAnsweredQuestions] = useSessionStorage('answeredQuestions', {
+        question1: false,
+        question2: false,
+        question3: false,
+        question4: false,
+        question5: false
+    });
     const [messageApi, contextHolder] = message.useMessage();
     const [value, setValue] = useSessionStorage('user', false);
     const [points, setPoints] = useSessionStorage('points', 0);
@@ -27,6 +35,26 @@ export const QuizFanArea = () => {
         }
     }
 
+    const countHandleAnsweredQuestions = () => {
+        let count = 0;
+        if(answeredQuestions.question1){
+            count++;
+        }
+        if(answeredQuestions.question2){
+            count++;
+        }
+        if(answeredQuestions.question3){
+            count++;
+        }
+        if(answeredQuestions.question4){
+            count++;
+        }
+        if(answeredQuestions.question5){
+            count++;
+        }
+        return count.toString().padStart(2, '0');
+    }
+
     return (
         <>
             {contextHolder}
@@ -38,11 +66,19 @@ export const QuizFanArea = () => {
                     <p className='text-2xl font-bold mt-1' style={{ color: '#FFF', fontFamily: 'barlowBold'}}>O que você sabe sobre a Copa Land View?</p>
                     </div>
                     <div className='absolute bottom-4 right-4'>
-                    <p className='text-base ml-2 justify-center p-1' style={{width: '230px', color: '#292822', fontFamily: 'barlowBold', backgroundColor: '#FFF'}}>00 / 10 respondidas - 0 Acertos </p>
-                        <Button className='m-2 font-bold justify-self-end rounded-none'
-                                    type="primary"
-                                    onClick={handleInitQuiz}
-                                    style={{width: '230px', fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
+                    <p className='text-base ml-2 justify-center p-1' style={{width: '235px', color: '#292822', fontFamily: 'barlowBold', backgroundColor: '#FFF'}}>
+                        <span>
+                            {countHandleAnsweredQuestions()}
+                        </span>
+                         / 05 respondidas - &nbsp;
+                         <span>
+                            {correctAnswers}
+                         </span>
+                         &nbsp; Acertos </p>
+                    <Button className='m-2 font-bold justify-self-end rounded-none'
+                                type="primary"
+                                onClick={handleInitQuiz}
+                                style={{width: '235px', fontFamily: 'barlowRegular', backgroundColor: '#AA591C' }}>INICIAR AGORA</Button>
                     </div>
                 </div>
                 {/* <div className="relative mb-8 w-4/5 m-auto">
